@@ -19,6 +19,11 @@ with gzip.open(wordlist, 'rt') as f:
         wl[first].append(line.rstrip())
 print('done')
 
+# Only print once. A word like 'papegoja' will
+# be printed twice because the first and second p
+# are treated as individual characters. If we call
+# them p(1) and p(2) the word can be written as:
+# p(1)ap(2)egoja or p(2)ap(1)egoja.
 printed = []
 
 # Try one permutation

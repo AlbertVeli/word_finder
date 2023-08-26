@@ -12,7 +12,7 @@ EXAMPLE
 
 ./word_finder.py nrahpkestduv 6
 
-It will print a number of alternatives, one of them is probably correct.
+It will print a number of candidates, one of them is probably correct.
 
 
 //Albert

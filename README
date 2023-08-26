@@ -6,6 +6,13 @@ This can be used to find possible solutions to games like for
 instance "gissa bilden". The default wordlist is Swedish. If you want
 to add another wordlist, gzip it and change the following line:
 
-wordlist = 'svenska.gz'
+wordlist = 'dict/svenska.gz'
+
+EXAMPLE
+
+./word_finder.py nrahpkestduv 6
+
+It will print a number of alternatives, one of them is probably correct.
+
 
 //Albert

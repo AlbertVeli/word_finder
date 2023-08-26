@@ -12,7 +12,7 @@ sys.stdout.write('Building wordlist...')
 wl = {}
 for c in alphabet:
     wl[c] = []
-wordlist = 'svenska.gz'
+wordlist = 'dict/svenska.gz'
 with gzip.open(wordlist, 'rt') as f:
     for line in f:
         first = line[0]
@@ -35,6 +35,7 @@ def try_one(perm):
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print(f'Usage {sys.argv[0]} <letters> <number of letters in word>')
+        exit(1)
     letters = list(sys.argv[1])
     num = int(sys.argv[2])
     try:

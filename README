@@ -1,0 +1,11 @@
+Small python program that takes a list of letters and a number as input. Then
+it picks all permutations of letters of the given length and compares with
+words from a wordlist. If the word is found in the wordlist it is printed.
+
+This can be used to find possible solutions to games like for
+instance "gissa bilden". The default wordlist is Swedish. If you want
+to add another wordlist, gzip it and change the following line:
+
+wordlist = 'svenska.gz'
+
+//Albert
